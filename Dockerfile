@@ -20,8 +20,8 @@ RUN apt-get update && \
     cd FlexGen && \
     # git checkout a8c8aa521e14806d07d01190cf095eb3119ae583 -b develop && \
     pip install -e . && \
-    cd apps && \
+    cd flexgen/apps && \
     curl -O https://raw.githubusercontent.com/FMInference/FlexGen/f79b8950487d0af96eaf5ef5f75c1be15e24e9bf/apps/chatbot.py
 
 ENTRYPOINT ["python3"]
-CMD ["/work/FlexGen/apps/chatbot.py", "--model", "facebook/opt-6.7b", "--compress-weight"]
+CMD ["/work/FlexGen/flexgen/apps/chatbot.py", "--model", "facebook/opt-6.7b", "--compress-weight"]
