@@ -5,9 +5,11 @@ flexgen in docker
 - [cuda-drivers](https://developer.nvidia.com/cuda-downloads)
 - [nvidia-container-toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker)
 
-## run bench
+## start chatbot apps
+
+todo
 
 ```
-$ docker build . -t flexgen
-$ docker run --rm --gpus all flexgen
+$ docker compose build
+$ docker compose run chatbot
 ```
