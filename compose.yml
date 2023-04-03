@@ -1,5 +1,6 @@
 services:
   chatbot:
+    runtime: nvidia
     build: .
     volumes:
     - /cache
