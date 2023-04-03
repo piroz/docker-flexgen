@@ -2,8 +2,11 @@
 import argparse
 
 from transformers import AutoTokenizer
-from flexgen.flex_opt import (Policy, OptLM, TorchDevice, TorchDisk, TorchMixedDevice,
-    CompressionConfig, Env, Task, get_opt_config, str2bool)
+from flexgen.flex_opt import Policy, OptLM
+from flexgen.opt_config import get_opt_config
+from flexgen.compression import CompressionConfig
+from flexgen.pytorch_backend import TorchDevice, TorchDisk, TorchMixedDevice
+from flexgen.utils import ExecutionEnv as Env, str2bool
 
 
 def main(args):
