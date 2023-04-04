@@ -24,4 +24,4 @@ RUN apt-get update && \
 COPY chatbot.py /work/FlexGen/flexgen/apps/chatbot.py
 
 ENTRYPOINT ["python3"]
-CMD ["/work/FlexGen/flexgen/apps/chatbot.py", "--model", "facebook/opt-6.7b", "--compress-weight"]
+CMD ["/work/FlexGen/flexgen/apps/chatbot.py", "--model", "facebook/opt-125m"]
