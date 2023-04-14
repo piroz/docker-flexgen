@@ -1,6 +1,10 @@
 services:
   chatbot:
-    runtime: nvidia
     build: .
     volumes:
     - /cache
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
